@@ -25,7 +25,7 @@ public class ChaineCaractere {
         String s = " hello ";
         String s2 = " hello ";
 
-        System.out.println("s === s2 " + (s == s2));
+        System.out.println("s == s2 " + (s == s2));
 
         String s3 = new String(" hello ");
 
@@ -40,7 +40,23 @@ public class ChaineCaractere {
 
         System.out.println("s4.equalsIgnoreCase(s5) " + (s4.equalsIgnoreCase(s5)));
 
+    }
+
+
+    public static void getFormat() {
+
+
+        String nom = "Alain";
+        String journey = "Morning";
+
+        String phrase = "Salut %s !, good %s !";
+
+        String formattage = String.format(phrase, nom, journey);
+
+        System.out.println(formattage);
 
 
     }
+
+
 }
