@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class VariablesConditions2 {
 
-    public void solutionExo34(Scanner s3) {
+    public static void solutionExo34(Scanner s3) {
         System.out.print("Merci de saisir un nombre : ");
         int nombre = s3.nextInt();
 
@@ -17,7 +17,7 @@ public class VariablesConditions2 {
         }
     }
 
-    public void solutionExo35(Scanner s3) {
+    public static void solutionExo35(Scanner s3) {
         System.out.print("Merci de saisir l'âge de l'enfant : ");
         int age = s3.nextInt();
 
@@ -34,7 +34,7 @@ public class VariablesConditions2 {
         }
     }
 
-    public void solutionExo36(Scanner s3) {
+    public static void solutionExo36(Scanner s3) {
         System.out.print("Merci de saisir un nombre entier : ");
         int nombre = s3.nextInt();
 
@@ -44,7 +44,7 @@ public class VariablesConditions2 {
             System.out.println("Le nombre n'est pas divisible par 3.");
         }
     }
-    public void solutionExo37(Scanner s3) {
+    public static void solutionExo37(Scanner s3) {
         System.out.print("Merci de saisir le nombre de photocopies à réaliser : ");
         int nombre = s3.nextInt();
         double total;
