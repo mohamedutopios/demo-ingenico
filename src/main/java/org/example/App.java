@@ -1,6 +1,9 @@
 package org.example;
 
+import org.example.array.Tableau;
+import org.example.exercice.StructureIterative;
 import org.example.exercice.VariablesConditions2;
+import org.example.poo.Product;
 import org.example.string.ChaineCaractere;
 
 import java.util.Scanner;
@@ -27,7 +30,14 @@ public class App
         //VariablesConditions2.solutionExo36(scanner);
        // scanner.close();
         //ChaineCaractere.getMethodString();
-        ChaineCaractere.getComparaisonString();
+        //ChaineCaractere.getComparaisonString();
+
+        //StructureIterative.solutionExo51();
+        //Tableau.getArray();
+
+        Product product = new Product(1);
+
+        Product product2 = new Product();
 
 
     }
