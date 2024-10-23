@@ -1,6 +1,6 @@
 package org.example.exercice.poo.tpCompte;
 
-public class Account {
+public class Account implements ICompte, IExemple{
 
     private static long nbComptes = 0;
     protected double solde;
@@ -28,12 +28,15 @@ public class Account {
         this.solde = solde;
     }
 
+
+    @Override
     public double depot(double montant) {
         solde=solde+montant;
         return solde;
     }
 
-    public double retrait(double montant){
+    @Override
+    public double retrait(double montant) {
         if (montant> solde){
             System.out.println("Pas assez d'argent sur le compte");
         } else {
@@ -43,13 +46,7 @@ public class Account {
     }
 
     @Override
-    public String toString() {
-        return "Account{" +
-                "solde=" + solde +
-                ", code=" + code +
-                '}';
+    public void test() {
+        System.out.println("test");
     }
-
-
-
 }
