@@ -5,6 +5,7 @@ import org.example.exercice.StructureIterative;
 import org.example.exercice.VariablesConditions2;
 import org.example.poo.Phone;
 import org.example.poo.Product;
+import org.example.poo.statique.User;
 import org.example.string.ChaineCaractere;
 
 import java.util.Scanner;
@@ -53,6 +54,20 @@ public class App
 
         System.out.println("phone " + phone1);
         phone1.quiSuisJe();
+
+        User user = new User();
+
+        System.out.println("user " + user);
+
+        User user1 = new User("michel");
+
+        System.out.println("user1 " + user1);
+
+        User user2 = new User("user2");
+        int val = User.counter;
+
+        System.out.println("val : " + val);
+        System.out.println("user2 " + user2);
 
     }
 }
