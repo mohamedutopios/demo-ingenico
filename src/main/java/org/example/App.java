@@ -3,6 +3,7 @@ package org.example;
 import org.example.array.Tableau;
 import org.example.exercice.StructureIterative;
 import org.example.exercice.VariablesConditions2;
+import org.example.poo.Phone;
 import org.example.poo.Product;
 import org.example.string.ChaineCaractere;
 
@@ -39,6 +40,19 @@ public class App
 
         Product product2 = new Product();
 
+        Product product3 = new Product(2,"Iphone");
+
+        System.out.println(product.getName());
+        product.setName("Samsung");
+        System.out.println(product.getName());
+        System.out.println(product3);
+
+
+        Phone phone = new Phone();
+        Phone phone1 = new Phone(1,"Iphone15",1120);
+
+        System.out.println("phone " + phone1);
+        phone1.quiSuisJe();
 
     }
 }
