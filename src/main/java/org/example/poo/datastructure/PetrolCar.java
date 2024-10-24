@@ -5,7 +5,13 @@ import org.example.exercice.poo.tpCompte.IExemple;
 public class PetrolCar extends Engine implements IVehicle {
 
 
+    public PetrolCar(String name, int nbreRoue, String couleur) {
+        super(name, nbreRoue, couleur);
+    }
 
+    public PetrolCar() {
+        super();
+    }
 
     @Override
     public void drive() {

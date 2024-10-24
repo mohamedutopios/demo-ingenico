@@ -23,5 +23,7 @@ public class Main {
         payant.depot(100);
         payant.retrait(150);
         System.out.println(payant);
+
+
     }
 }

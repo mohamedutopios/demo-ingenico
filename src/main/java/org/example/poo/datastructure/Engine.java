@@ -2,12 +2,28 @@ package org.example.poo.datastructure;
 
 public abstract class Engine {
 
-    private static int count;
+    private static int count = 0;
     protected String name;
     protected int id;
 
     protected int nbreRoue;
     protected String couleur;
+
+
+    {
+        ++count;
+    }
+
+    public Engine(String name, int nbreRoue, String couleur) {
+        this.name = name;
+        this.id = count;
+        this.nbreRoue = nbreRoue;
+        this.couleur = couleur;
+    }
+
+    public Engine() {
+        this.id = count;
+    }
 
     public abstract String test();
 
