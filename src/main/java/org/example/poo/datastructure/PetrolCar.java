@@ -2,7 +2,7 @@ package org.example.poo.datastructure;
 
 import org.example.exercice.poo.tpCompte.IExemple;
 
-public class PetrolCar extends Engine implements IVehicle {
+public non-sealed class PetrolCar extends Engine implements IVehicle {
 
 
     public PetrolCar(String name, int nbreRoue, String couleur) {

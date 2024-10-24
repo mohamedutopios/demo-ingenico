@@ -27,5 +27,7 @@ public class EnumDemo {
         }
 
 
+        System.out.println("Month.JANVIER.getDaysAmount() : " + Month.JANVIER.getDaysAmount());
+
     }
 }

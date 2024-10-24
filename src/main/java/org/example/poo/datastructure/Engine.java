@@ -1,6 +1,6 @@
 package org.example.poo.datastructure;
 
-public abstract class Engine {
+public abstract sealed class Engine permits ElectricCar, MotorCycle, PetrolCar {
 
     private static int count = 0;
     protected String name;

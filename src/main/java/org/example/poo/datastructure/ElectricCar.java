@@ -1,6 +1,6 @@
 package org.example.poo.datastructure;
 
-public class ElectricCar extends Engine implements IVehicle{
+public final class ElectricCar extends Engine implements IVehicle{
 
 
     public ElectricCar() {
