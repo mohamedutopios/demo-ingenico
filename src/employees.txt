@@ -1,0 +1,5 @@
+id,first_name,last_name,email,salary
+1,Jim,Doe,john.doe@example.com,5000
+2,Jessica,Smith,jane.smith@example.com,7000
+3,Boby,Johnson,bob.johnson@example.com,6000
+4,Alia,Walker,alice.walker@example.com,8000
