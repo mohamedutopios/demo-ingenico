@@ -37,9 +37,15 @@ public class DemoSet {
         set2.add("Banana");
 
         set1.addAll(set2);
-
         System.out.println("set1 : " + set1);
-
+        Set<String> set3 = new HashSet<>();
+        set3.add("Apple");
+        set3.add("Banana");
+        Set<String> set4 = new HashSet<>();
+        set4.add("Orange");
+        set4.add("Banana");
+        set3.retainAll(set4);
+        System.out.println(set3);
 
     }
 }
