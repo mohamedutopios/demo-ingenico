@@ -8,7 +8,6 @@ import java.io.IOException;
 public class FileReadExample {
 
     public static void main(String[] args)  {
-
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader("./src/toto.txt"));
             String line;
@@ -16,8 +15,7 @@ public class FileReadExample {
                 System.out.println(line);
             }
         } catch (IOException e) {
-            System.out.println(e.getMessage());;
+            System.out.println(e.getMessage());
         }
-
     }
 }
