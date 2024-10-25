@@ -1,10 +1,9 @@
 package org.example.io.demo;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Employee {
@@ -13,4 +12,11 @@ public class Employee {
     private String lastName;
     private String email;
     private double salary;
+
+    @Override
+    public String toString() {
+        return id + "," + firstName + "," + lastName + "," + email + "," + salary;
+    }
+
+
 }
