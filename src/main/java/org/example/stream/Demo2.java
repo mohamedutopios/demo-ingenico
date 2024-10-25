@@ -1,6 +1,8 @@
 package org.example.stream;
 
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Demo2 {
 
@@ -41,8 +43,28 @@ public class Demo2 {
 
         List<Cart> carts = Arrays.asList(cart,cart1,cart2);
 
+        Product[] productArray = carts
+                .stream()
+                .flatMap(c -> c.getProducts()
+                        .stream())
+                .filter(product -> product.getReference()>109876)
+                .map(product -> {
+                    product.setPrice(product.getPrice()*1.50);
+                    return product;
+                }).toArray(Product[]::new);
 
+        for (Product product : productArray) {
+            System.out.println(product);
+        }
 
+        System.out.println("-- toMap : ");
+
+        Map<String, Product> map = products
+                .stream()
+                .collect(Collectors
+                        .toMap(Product::getName, Function.identity()));
+
+        System.out.println(map);
 
     }
 

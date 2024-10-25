@@ -1,5 +1,6 @@
 package org.example.stream;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
@@ -11,6 +12,7 @@ public class Cart {
     }
 
     public Cart() {
+        this.products = new ArrayList<>();
     }
 
     public List<Product> getProducts() {
