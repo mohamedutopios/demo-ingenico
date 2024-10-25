@@ -1,9 +1,6 @@
 package org.example.stream;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Demo1 {
 
@@ -45,7 +42,31 @@ public class Demo1 {
 
         // manipulation avec Objet
 
+        List<Employe> employees = new ArrayList<>();
+        employees.add(new Employe(1L,Genre.FEMME,189,9000));
+        employees.add(new Employe(2L,Genre.AUTRE,200,10000));
+        employees.add(new Employe(3L,Genre.HOMME,190,7654));
+        employees.add(new Employe(4L,Genre.FEMME,170,9000));
+        employees.add(new Employe(5L,Genre.AUTRE,190,9800));
 
+
+        double salaireTotal = employees
+                .stream()
+                .mapToDouble(e -> e.getSalaire())
+                .sum();
+
+
+        System.out.println("Le salaire total est de : " + salaireTotal);
+
+        Optional<Employe> employe = employees.stream().filter(e -> e.getTaille()>=200).findFirst();
+
+        if(employe.isPresent()){
+            System.out.println(employe.get());
+        }
+
+        Employe employe1 = employees.stream().filter(e -> e.getTaille()>=170).findFirst().orElse(null);
+
+        System.out.println(employe1);
 
 
     }
